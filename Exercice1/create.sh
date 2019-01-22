@@ -24,3 +24,5 @@ fstcompile --acceptor --isymbols=A.isyms M.txt M.fsa
 fstdraw --acceptor --portrait -isymbols=A.isyms M.fsa | dot -Tpng > M.png
 fstminimize M.fsa Mm.fsa
 fstdraw --acceptor --portrait -isymbols=A.isyms Mm.fsa | dot -Tpng > Mm.png
+fstshortestpath --nshortest=4 A.fsa Asp.fsa
+fstdraw --acceptor --portrait -isymbols=A.isyms Asp.fsa | dot -Tpng > Asp.png
