@@ -22,3 +22,5 @@ fstdraw --acceptor --portrait -isymbols=A.isyms Idet.fsa | dot -Tpng > Idet.png
 fstdraw --acceptor --portrait -isymbols=A.isyms Cdet.fsa | dot -Tpng > Cdet.png
 fstcompile --acceptor --isymbols=A.isyms M.txt M.fsa
 fstdraw --acceptor --portrait -isymbols=A.isyms M.fsa | dot -Tpng > M.png
+fstminimize M.fsa Mm.fsa
+fstdraw --acceptor --portrait -isymbols=A.isyms Mm.fsa | dot -Tpng > Mm.png
